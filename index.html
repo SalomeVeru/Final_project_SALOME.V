@@ -22,13 +22,15 @@
   <div class="container">
     <nav>
       <img src="/src/img/logo.png" class="logo" alt="logo">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-xmark" onclick="closemenu()"></i>
       </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
     </nav>
     <div class="header-text">
       <p>UI/UX Designer</p>
@@ -173,15 +175,16 @@
           <a href=""><i class="fa-brands fa-instagram"></i></a>
           <a href=""><i class="fa-brands fa-github"></i></a>
         </div>
-        <a href="/src/img/my-cv.pdf" download class="btn btn2" >Download CV</a>
+        <a href="/src/img/my-cv.pdf" download class="btn btn2">Download CV</a>
       </div>
       <div class="contact-right">
-        <form>
+        <form name="submit-to-google-sheet">
           <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="example@email.com" required>
+          <input type="email" name="Email" placeholder="example@email.com" required>
           <textarea name="Message" rows="6" placeholder="Write your message here"></textarea>
           <button type="submit" class="btn btn2">Submit</button>
         </form>
+        <span id="msg"> </span>
       </div>
     </div>
   </div>
