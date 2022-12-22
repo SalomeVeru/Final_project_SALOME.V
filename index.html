@@ -5,196 +5,198 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> რატო არ შვრება? -->
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora"> -->
   <link rel="stylesheet" href="./src/styles/style.css">
   <script src="https://kit.fontawesome.com/a16b5bdf51.js" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
   <title>Salome Verulidze</title>
 </head>
 
 <body>
 
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/src/img/logo.png" class="logo" alt="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Salome <br> Verulidze</span><br> From Georgia</h1>
+      </div>
+    </div>
+  </div>
 
-  <script src="./src/script/script.js"></script>
+  <!-- ////////////////////about/////////////////// -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./src/img/user.JPG">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I came to UI/UX desighn field from social sciences.
+            I have got MMA in strategist communications.
+            I also stated front-end developing in 2022</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+              <li><span>Web Development</span><br>Web app Development</li>
+              <li><span>Branding</span><br>Building brand-image for brands</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022 - Current</span><br>UX stategist at Atemporal Nights</li>
+              <li><span>2021 - 2022</span><br>Marketing manager at VES.</li>
+              <li><span>2018 - 2019 </span><br>Intership at Sakhli dighomshi</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022</span><br>UI/UX Design Training at ICT3000</li>
+              <li><span>2022</span><br>MBA from Alterbridge</li>
+              <li><span>2020</span><br>BBA from Free University Tbilisi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////////////////////// Services /////////////////////// -->
+
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2> Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae ad est impedit voluptatibus quasi expedita error
+            perspiciatis repellat porro commodi dolores voluptas,
+            facere officia? Iure minus rem quam vero ad!</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-sharp fa-solid fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae ad est impedit voluptatibus quasi expedita error
+            perspiciatis repellat porro commodi dolores voluptas,
+            facere officia? Iure minus rem quam vero ad!</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2> App Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae ad est impedit voluptatibus quasi expedita error
+            perspiciatis repellat porro commodi dolores voluptas,
+            facere officia? Iure minus rem quam vero ad!</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ////////////////////// Portfoli /////////////////////////// -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="./src/img/work1.png">
+          <div class="layer">
+            <h3> Recycling Mobile Aplication</h3>
+            <p>Ecocity offers a unique and fun way to engage in waste reduction and recycling. It is designed to raise
+              awareness on the pressing issues in household waste management and offers solutions to the challenges the
+              potential users are facing today by minimizing the time and effort spent on recycling. The essence of the
+              product resembles a game, with internal reward system such as achievement badges, coupons and gift cards.
+            </p>
+            <a
+              href="https://www.figma.com/proto/ki009VxxCjXqQP1qlhoSnv/Group-4_Waste-Recycling-%26-Sustainability?node-id=990%3A1189&scaling=scale-down&page-id=949%3A1064&starting-point-node-id=990%3A1189"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./src/img/work2.png">
+          <div class="layer">
+            <h3>Online Jewellery Website</h3>
+            <p>Jewelry.com has been a pioneer in online jewelry sales for the last 10 years. People visit the online
+              store to purchase authentic diamond and gold jewelry across 10 categories. </p>
+            <a
+              href="https://www.figma.com/proto/hDWq8c5L75S5A65bmAFW2K/Jewerly.com?node-id=153%3A420&starting-point-node-id=153%3A420"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./src/img/work3.png">
+          <div class="layer">
+            <h3>Music Event </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Earum illum voluptas non suscipit eaque necessitatibus.</p>
+            <a href="https://www.instagram.com/atemporal.nights_holoseum/"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn"> See more</a>
+    </div>
+  </div>
+
+  <!-- ///////////////////// Contact////////////////// -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>verulidzesalome23@gmail.com</p>
+          <p><i class="fa-sharp fa-solid fa-square-phone"></i>574130153</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/sverulidze"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/salome-verulidze-224b50207/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/isevsalomeisevverulidze/"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="/src/img/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="example@email.com" required>
+            <textarea name="Message" rows="6" placeholder="Write your message here"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"> </span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright ©Salome Verulidze 2022
+      </p>
+    </div>
+  </div>
+  <script src="/src/script/script.js"></script>
 </body>
-<div id="header">
-  <div class="container">
-    <nav>
-      <img src="/src/img/logo.png" class="logo" alt="logo">
-      <ul id="sidemenu">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <i class="fas fa-xmark" onclick="closemenu()"></i>
-      </ul>
-      <i class="fas fa-bars" onclick="openmenu()"></i>
-    </nav>
-    <div class="header-text">
-      <p>UI/UX Designer</p>
-      <h1>Hi, I'm <span>Salome <br> Verulidze</span><br> From Georgia</h1>
-    </div>
-  </div>
-</div>
-
-<!-- ////////////////////about/////////////////// -->
-<div id="about">
-  <div class="container">
-    <div class="row">
-      <div class="about-col-1">
-        <img src="./src/img/user.png">
-      </div>
-      <div class="about-col-2">
-        <h1 class="sub-title">About Me</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Nulla ex obcaecati esse quaerat,
-          quibusdam enim tempore! Corporis voluptatem nam vero
-          maxime natus laborum. Dignissimos,
-          dolor totam id possimus eaque quod?</p>
-
-
-        <div class="tab-titles">
-          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-          <p class="tab-links" onclick="opentab('experience')">Experience</p>
-          <p class="tab-links" onclick="opentab('education')">Education</p>
-        </div>
-        <div class="tab-contents active-tab" id="skills">
-          <ul>
-            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-            <li><span>Web Development</span><br>Web app Development</li>
-            <li><span>App</span><br>Building Android/iOS apps</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="experience">
-          <ul>
-            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
-            <li><span>2019 - 2021</span><br>Team lead ar StartApp LLC.</li>
-            <li><span>2016 - 2017 </span><br>Intership at ekart eCommerce.</li>
-          </ul>
-        </div>
-        <div class="tab-contents" id="education">
-          <ul>
-            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
-            <li><span>2016</span><br>MBA from MIT Bangalore</li>
-            <li><span>2014</span><br>BBA from ISM Bangalore</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ///////////////////////// Services /////////////////////// -->
-
-<div id="services">
-  <div class="container">
-    <h1 class="sub-title">My Services</h1>
-    <div class="services-list">
-      <div>
-        <i class="fa-solid fa-code"></i>
-        <h2> Web Design</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Beatae ad est impedit voluptatibus quasi expedita error
-          perspiciatis repellat porro commodi dolores voluptas,
-          facere officia? Iure minus rem quam vero ad!</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div>
-        <i class="fa-sharp fa-solid fa-crop"></i>
-        <h2>UI/UX Design</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Beatae ad est impedit voluptatibus quasi expedita error
-          perspiciatis repellat porro commodi dolores voluptas,
-          facere officia? Iure minus rem quam vero ad!</p>
-        <a href="#">Learn more</a>
-      </div>
-      <div>
-        <i class="fa-brands fa-app-store"></i>
-        <h2> App Design</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Beatae ad est impedit voluptatibus quasi expedita error
-          perspiciatis repellat porro commodi dolores voluptas,
-          facere officia? Iure minus rem quam vero ad!</p>
-        <a href="#">Learn more</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ////////////////////// Portfoli /////////////////////////// -->
-
-<div id="portfolio">
-  <div class="container">
-    <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-      <div class="work">
-        <img src="./src/img/work-1.png">
-        <div class="layer">
-          <h3>Social Media App</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Earum illum voluptas non suscipit eaque necessitatibus.</p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="./src/img/work-2.png">
-        <div class="layer">
-          <h3>Music App</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Earum illum voluptas non suscipit eaque necessitatibus.</p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="work">
-        <img src="./src/img/work-3.png">
-        <div class="layer">
-          <h3>Online Shopping App</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Earum illum voluptas non suscipit eaque necessitatibus.</p>
-          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-    </div>
-    <a href="#" class="btn"> See more</a>
-  </div>
-</div>
-
-<!-- ///////////////////// Contact////////////////// -->
-<div id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="contact-left">
-        <h1 class="sub-title">Contact Me</h1>
-        <p><i class="fa-solid fa-paper-plane"></i>cantact@example.com</p>
-        <p><i class="fa-sharp fa-solid fa-square-phone"></i>574130153</p>
-        <div class="social-icons">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-linkedin"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-github"></i></a>
-        </div>
-        <a href="/src/img/my-cv.pdf" download class="btn btn2">Download CV</a>
-      </div>
-      <div class="contact-right">
-        <form name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required>
-          <input type="email" name="Email" placeholder="example@email.com" required>
-          <textarea name="Message" rows="6" placeholder="Write your message here"></textarea>
-          <button type="submit" class="btn btn2">Submit</button>
-        </form>
-        <span id="msg"> </span>
-      </div>
-    </div>
-  </div>
-  <div class="copyright">
-    <p>
-      Copyright ©Salome Verulidze 2022
-    </p>
-  </div>
-</div>
-
-<script src="/src/script/script.js"></script>
 
 </html>

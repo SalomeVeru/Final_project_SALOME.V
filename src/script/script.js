@@ -26,7 +26,7 @@ function closemenu() {
 
 // გუგლ შითში ფორმის გაკეთება და საიტიდან მესიჯების მიღება 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyhCWHk2xaCiUCtgpNepVdJR6Bt9xHzVw7USyibJeJYhuhUzfm1Bvw3UXesUIiOxXPl/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyyPIoJrjHmRnjE_oss3JmN1z-Ug8An50u0m5qJDfo/dev'
 const form = document.forms['submit-to-google-sheet']
 const msg=document.getElementById('msg')
 
